@@ -2,7 +2,7 @@
 // function PrintingToScreen (number) {
 // let minNum = 0 ;
 // let maxNum = 0 ;
-// let stop = 0
+// let stop = 0 ;
 // while (stop < 1) {
 // number = Number(prompt("type a number"));
 // if (number > maxNum ) maxNum = number ;
@@ -79,24 +79,51 @@
 // }
 // fizBuzzGame();
 
-// exe.6
-// function lottery() {
-// let userNumbers = [];
-// let counter = 0 ;
-// while (counter < 10){
-// let userInput = Number (prompt("type a number")) ;
-// if (userInput && userInput >=1 && userInput <=10){
-//     userNumbers.push(userInput);
-//     console.log(userNumbers);
-//     counter ++ ;
-// }
-// else {
-//     ""
-// }
-// }
-// }
+// exe.6 
+// function userNumbers () {
+//     let userArray = [] ;
+//     let stop = 0; 
+//    while (stop < 10){
+//    let userNumber = Number(prompt("type a number"));
+//    if (userNumber >=1 && userNumber <= 100 && userArray.indexOf(userNumber) == -1) {
+//        userArray.push (userNumber) ;
+//        stop ++ ;
+//    }
+//    else {
+//        stop -- ;
+//    }
+//    }
+//    return userArray ;
+//    }
+   
+//    console.log(userNumbers());
 
-// lottery();
+// function randomArray () {
+//     let array = [] ;
+//     let number  ;
+//     for (let i = 0; i < 50; i++){
+//     number = Math.round (Math.random () * 100) ;
+//     if (array.indexOf(number) == -1) {
+//         array.push(number)
+//     }
+//     else {
+//         i-- ;
+//     }
+//     }
+//     return array ;
+// } ;
+
+// console.log(randomArray());
+
+// function finalLottery (array1, array2){
+//     let counter = 0 ;
+//     for (let i = 0; i < array1.length; i++){
+//      array2.indexOf(array1[i]) != -1 ? counter ++ : "" ;
+//     }
+//     return `We found ${counter} matches` ;
+// } ;
+// console.log(finalLottery(userNumbers , randomArray));
+
 
 // exe.1
 // function printBuilding (heigth , width , floor  , appartments) {
