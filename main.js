@@ -87,17 +87,16 @@
 //    let userNumber = Number(prompt("type a number"));
 //    if (userNumber >=1 && userNumber <= 100 && userArray.indexOf(userNumber) == -1) {
 //        userArray.push (userNumber) ;
-//        stop ++ ;
+//        console.log(userNumber);
+//        stop ++  ;   
 //    }
 //    else {
-//        stop -- ;
+//        stop --    
 //    }
 //    }
 //    return userArray ;
 //    }
    
-//    console.log(userNumbers());
-
 // function randomArray () {
 //     let array = [] ;
 //     let number  ;
@@ -110,19 +109,18 @@
 //         i-- ;
 //     }
 //     }
+//     console.log(array);
 //     return array ;
 // } ;
-
-// console.log(randomArray());
 
 // function finalLottery (array1, array2){
 //     let counter = 0 ;
 //     for (let i = 0; i < array1.length; i++){
-//      array2.indexOf(array1[i]) != -1 ? counter ++ : "" ;
+//      array2.indexOf(array1[i]) != -1 ? console.log(`match number ${counter++}`) : "" ;
 //     }
 //     return `We found ${counter} matches` ;
 // } ;
-// console.log(finalLottery(userNumbers , randomArray));
+// console.log(finalLottery( userNumbers() , randomArray()));
 
 
 // exe.1
